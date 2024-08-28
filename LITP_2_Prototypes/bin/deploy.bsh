@@ -1,0 +1,129 @@
+#!/bin/bash
+
+DIRNAME=/usr/bin/dirname
+ECHO=/bin/echo
+GETOPT=/usr/bin/getopt
+GREP=/bin/grep
+LS=/bin/ls
+RPM=/bin/rpm
+SERVICE=/sbin/service
+YUM=/usr/bin/yum
+
+_dir_=`${DIRNAME} $0`
+SCRIPTHOME=`cd ${_dir_}/.. 2>/dev/null && pwd || ${ECHO} ${_dir_}`
+export SCRIPTHOME
+unset _dir_
+
+DEPLOYMENT_DIR=${SCRIPTHOME}/deployments
+
+
+log()
+{
+  ${ECHO} -e "$*"
+}
+
+usage()
+{
+  log "Install plugins:"
+  log "\t${0} --plugins"
+  log "Install a deployment:"
+  log "\t${0} --deploy --deployment <deployment> [--site <site_file>]"
+  log ""
+  log "Clean an installed deployment:"
+  log "\t${0} --clean --deployment <deployment>"
+  log "\t\tIf no --site arg specified <deployment>/site.conf used (if it exists)"
+  log ""
+  log "List available deployments:"
+  log "\t${0} --list"
+}
+
+install_plugins()
+{
+  for _rpm_ in `${LS} ${SCRIPTHOME}/etc/litp_plugin_*.rpm` ; do
+    local _res_
+    _res_=`${YUM} localinstall -y ${_rpm_} 2>&1`
+    if [ $? -ne 0 ] ; then
+      ${ECHO} "${_res_}" | ${GREP} "UnboundLocalError" > /dev/null 2>&1
+      if [ $? -ne 0 ] ; then
+        log "${_res_}"
+        exit 1
+      fi
+    fi
+  done
+  ${SERVICE} litpd restart
+}
+if [ $# -eq 0 ]; then
+  usage
+  exit 0
+fi
+
+# Execute getopt
+ARGS=`${GETOPT} -o "hdci:s:lp" -l "help,deploy,clean,deployment:,site:,list,plugins" -n "$0" -- "$@"`
+#Bad arguments
+if [ $? -ne 0 ] ; then
+  usage
+  exit 2
+fi
+
+# A little magic
+eval set -- "$ARGS"
+_SITE_CONF_=""
+_ACTION_=
+_DEPLOYMENT_=
+_LIST_=
+while true ; do
+  case "$1" in
+    --plugins|-p)
+      install_plugins
+      exit 0
+      ;;
+    --list|-l)
+      ${LS} ${DEPLOYMENT_DIR}
+      exit 0
+      ;;
+    --help|-h)
+      usage
+      exit 0
+      ;;
+    --site|-s)
+      _SITE_CONF_="--site ${2}"
+      shift 2
+      ;;
+    --deploy|-d)
+      _ACTION_="deploy.sh"
+      shift
+      ;;
+    --deployment|-i)
+      _DEPLOYMENT_="$2"
+      shift 2
+      ;;
+    --clean|-c)
+      _ACTION_="cleanup.sh"
+      shift
+      ;;
+    --)
+      shift
+      break;;
+	esac
+done
+
+if [ ! ${_DEPLOYMENT_} ] ; then
+  log "No deployment specified!"
+  usage
+  exit 2
+fi
+
+_deploydir_=${DEPLOYMENT_DIR}/${_DEPLOYMENT_}
+_action_script_=${_deploydir_}/${_ACTION_}
+
+if [ ! -d ${_deploydir_} ] ; then
+  log "Deployment ${_deploydir_} not found!"
+  exit 3
+fi
+if [ ! -f ${_action_script_} ] ; then
+  log "Cant find ${_action_script_}"
+  exit 2
+fi
+
+${BASH} ${_action_script_} ${_SITE_CONF_} 2>&1
+exit $?

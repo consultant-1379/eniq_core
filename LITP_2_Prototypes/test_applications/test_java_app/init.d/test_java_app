@@ -1,0 +1,94 @@
+#!/bin/bash
+
+DIRNAME=/usr/bin/dirname
+ECHO=/bin/echo
+GREP=/bin/grep
+JAVA=/usr/bin/java
+PS=/bin/ps
+
+EPS_HOME=/opt/ericsson/test_java_app
+
+CLASSPATH=${EPS_HOME}/lib/test_java_app.jar
+if [ -d ${EPS_HOME}/classes ] ; then
+	CLASSPATH=${EPS_HOME}/classes:${CLASSPATH}
+fi
+
+CLIENT_CLASS="com.ericsson.nms.eniq.test_app.MainClassClient"
+SERVER_CLASS="com.ericsson.nms.eniq.test_app.MainClassServer"
+APP_NAME="test_java_process"
+SERVER_PORT=55000
+
+
+status()
+{
+  ${PS} -ef | ${GREP} -v grep | ${GREP} -E "\-D${APP_NAME}=${APP_NAME}" > /dev/null 2>&1
+	if [ $? -eq 0 ] ; then
+    ${JAVA} -cp ${CLASSPATH} ${CLIENT_CLASS} ${SERVER_PORT} "ping" > /dev/null
+		if [ $? -eq 0 ] ; then
+			${ECHO} "${APP_NAME} is running (pingable)."
+			return 0
+		else
+			${ECHO} "${APP_NAME} does not seem to be running correctly!"
+			return 3
+		fi
+  else
+		${ECHO} "${APP_NAME} is not running (no process found)."
+    return 3
+  fi
+}
+
+stop()
+{
+	status > /dev/null 2>&1
+	if [ $? -eq 0 ] ; then
+		${ECHO} "Stopping ${APP_NAME}"
+		${JAVA} -cp ${CLASSPATH} ${CLIENT_CLASS} ${SERVER_PORT} "quit" > /dev/null
+	else
+		${ECHO} "${APP_NAME} is not running."
+		return 0
+	fi
+}
+
+start()
+{
+	status > /dev/null 2>&1
+	if [ $? -eq 0 ] ; then
+		${ECHO} "${APP_NAME} is already running."
+		return 0
+	else
+		${ECHO} "Starting ${APP_NAME}"
+		${ECHO} "${JAVA} -cp ${CLASSPATH} -D${APP_NAME}=${APP_NAME} ${SERVER_CLASS}" > /var/log/${APP_NAME}.log
+		${JAVA} -cp ${CLASSPATH} -D${APP_NAME}=${APP_NAME} ${SERVER_CLASS} > /var/log/${APP_NAME}.log 2>&1 &
+		return $?
+	fi
+}
+
+restart()
+{
+	stop
+	start
+	status
+}
+
+case "$1" in
+  start)
+    start
+    exit $?
+    ;;
+  stop)
+    stop
+    exit $?
+    ;;
+  try-restart|reload|force-reload|restart)
+    restart
+    exit $?
+    ;;
+  status)
+    status
+    exit $?
+    ;;
+  *)
+    echo "Usage: ${0} start|stop|restart|status"
+    exit 2
+    ;;
+esac

@@ -1,0 +1,96 @@
+#!/bin/bash
+
+AWK=/bin/awk
+CHKCONFIG=/sbin/chkconfig
+COBBLER=/usr/bin/cobbler
+ECHO=/bin/echo
+GREP=/bin/grep
+PUPPET=/usr/bin/puppet
+RM=/bin/rm
+SERVICE=/sbin/service
+VIRSH=/usr/bin/virsh
+
+log()
+{
+  ${ECHO} "$*"
+}
+
+# COBBLER
+clean_cobbler()
+{
+  ${COBBLER} status > /dev/null 2>&1
+  if [ $? -eq 155 ] ; then
+    # httpd does not appear to be running and proxying
+    # cobbler, or SELinux is in the way.
+    return
+  fi
+  log "Checking for cobbler systems ..."
+  for _sys_ in `${COBBLER} system list` ; do
+    log "Removing cobbler system ${_sys_}"
+    ${COBBLER} system remove --name "${_sys_}" 2>&1
+  done
+  log "Checking for cobbler profiles ..."
+  for _profiles_ in `${COBBLER} profile list`; do
+    log "Removing cobbler profile ${_profiles_}"
+	  ${COBBLER} profile remove --name "${_profiles_}" 2>&1
+  done
+  log "Checking for cobbler distros ..."
+  for _distro_ in `${COBBLER} distro list`; do
+    log "Removing cobbler distro ${_distro_}"
+	  ${COBBLER} distro remove --name "${_distro_}" 2>&1
+  done
+}
+
+clean_puppet()
+{
+  for _cert_ in `${PUPPET} cert list --all | ${GREP} -v ${HOSTNAME} | ${AWK} -F\" '{print $2}'` ; do
+    ${PUPPET} cert clean ${_cert_} 2>&1
+  done
+  ${SERVICE} puppet stop
+  ${RM} -fr /opt/ericsson/nms/litp/etc/puppet/manifests/plugins/*
+  ${SERVICE} puppet start
+}
+
+clean_known_hosts()
+{
+  ${RM} -f /root/.ssh/known_hosts
+}
+
+clean_litpd()
+{
+  ${SERVICE} litpd stop
+  ${RM} -f /var/lib/litp/*
+  ${SERVICE} litpd start
+}
+
+clean_vms()
+{
+  ${CHKCONFIG} --list libvirtd > /dev/null 2>&1
+  if [ $? -eq 0 ] ; then
+    local _vms_
+    _vms_=`${VIRSH}  list --all --name 2>&1`
+    if [ $? -ne 0 ] ; then
+      ${ECHO} "${_vms_}"
+      return 0
+    fi
+    for _vm_ in ${_vms_}; do
+      ${VIRSH}  destroy ${_vm_} 2>&1
+      ${VIRSH}  undefine ${_vm_} 2>&1
+    done
+    ${RM} -fr /var/lib/libvirt/images/*
+  fi
+}
+
+if [ $# -eq 0 ] ; then
+  clean_cobbler
+  clean_puppet
+  clean_known_hosts
+  clean_litpd
+  clean_vms
+else
+  for _i_ in $@ ; do
+    ${_i_}
+  done
+fi
+
+

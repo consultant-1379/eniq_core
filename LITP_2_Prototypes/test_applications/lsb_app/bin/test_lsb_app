@@ -1,0 +1,85 @@
+#!/bin/bash
+### BEGIN INIT INFO ###
+# Provides: test_lsb_app
+# Required-Start: $local_fs $network
+# Required-Stop: $local_fs $network
+# Should-Start:
+# Should-Stop:
+# Default-Start: 3 4 5
+# Default-Stop: 0 1 2 6
+# Short-Description: rmi_registry instance
+# Description: rmi_registry instance
+### END INIT INFO ###
+
+BASENAME=/bin/basename
+ECHO=/bin/echo
+KILL=/bin/kill
+PIDOF=/sbin/pidof
+RMIREGISTRY=/usr/java/default/bin/rmiregistry
+
+PIDFILE=/var/run/test_lsb_app.pid
+
+
+status()
+{
+    ${PIDOF} `${BASENAME} ${RMIREGISTRY}` > /dev/null
+    if [ $? -eq 0 ] ; then
+        ${ECHO} "online"
+        return 0
+    else
+        ${ECHO} "offline"
+        return 3
+    fi
+}
+
+stop()
+{
+    _name_=`${BASENAME} ${RMIREGISTRY}`
+    _pid_=`${PIDOF} ${_name_}`
+    if [ $? -eq 0 ] ; then
+        ${KILL} ${_pid_}
+    fi
+    rm -rf ${PIDFILE}
+    return 0
+}
+
+start ()
+{
+    _pid_=`${PIDOF} ${RMIREGISTRY}`
+    if [ $? -eq 0 ] ; then
+        ${ECHO} "already running"
+        return 0
+    fi
+    ${RMIREGISTRY} 1200 &
+    _pid_=`${PIDOF} ${RMIREGISTRY}`
+    ${ECHO} ${_pid_} > ${PIDFILE}
+    return 0
+}
+
+
+case "$1" in
+  start)
+    start
+    exit $?
+    ;;
+  stop)
+    stop
+    exit $?
+    ;;
+  try-restart)
+  reload)
+  force-reload)
+  restart)
+    stop
+    start
+    exit $?
+    ;;
+  status)
+    status
+    exit $?
+    ;;
+  *)
+    echo "Usage: ${0} start|stop|restart|status"
+    exit 2
+    ;;
+esac

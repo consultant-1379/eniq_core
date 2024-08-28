@@ -1,0 +1,14 @@
+#!/bin/bash
+
+DIRNAME=/usr/bin/dirname
+ECHO=/bin/echo
+PYTHON=/usr/bin/python
+
+_dir_=`${DIRNAME} $0`
+SCRIPTHOME=`cd ${_dir_}/.. 2>/dev/null && pwd || ${ECHO} ${_dir_}`
+unset _dir_
+
+
+export PYTHONPATH=${PYTHONPATH}:${SCRIPTHOME}/lib
+${PYTHON} ${SCRIPTHOME}/lib/h_litp/rest_api.py
+

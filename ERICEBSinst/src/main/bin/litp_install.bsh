@@ -1,0 +1,110 @@
+#!/bin/bash
+
+AWK=/bin/awk
+ECHO=/bin/echo
+CHMOD=/bin/chmod
+CHOWN=/bin/chown
+CP=/bin/cp
+GREP=/bin/grep
+IPTABLES=/sbin/iptables
+MKDIR=/bin/mkdir
+MOUNT=/bin/mount
+RM=/bin/rm
+SERVICE=/sbin/service
+SH=/bin/sh
+TAR=/bin/tar
+TOUCH=/bin/touch
+UMOUNT=/bin/umount
+
+usage()
+{
+	${ECHO} "Usage: $0 -i {LITP .iso} -p {core 3PP tar}"
+	exit 2
+}
+
+if [ $# -eq 0 ] ; then
+	usage
+	exit 2
+fi
+while getopts ":i:p:" _option_ ; do
+	case "${_option_}" in
+		i)	LITP_ISO=${OPTARG}
+				;;
+		p) 	PPP=${OPTARG}
+				;;
+		*) 	usage
+				exit 2
+				;;
+  esac
+done
+if [ -z "${LITP_ISO}" ] || [ -z "${PPP}" ]; then
+	usage
+	exit 2
+fi
+if [ ! -f ${LITP_ISO} ] ; then
+	${ECHO} "${LITP_ISO} not found !"
+	exit 1
+fi
+if [ ! -f ${PPP} ] ; then
+	${ECHO} "${PPP} not found !"
+	exit 1
+fi
+
+extract_core_ppp()
+{
+  ${ECHO} "Extracting ${PPP} ..."
+  _results_=`${TAR} xvfz ${PPP} -C / 2>&1`
+  if [ $? -ne 0 ] ; then
+    ${ECHO} "Failed to extract ${PPP}"
+    ${ECHO} "${_results_}"
+    exit 1
+  fi
+}
+
+install_litp()
+{
+  ${ECHO} "Mounting ${LITP_ISO} ..."
+  _mount_=/media/litp
+  if [ -d ${_mount_} ] ; then
+    ${UMOUNT} ${_mount_} > /dev/null 2>&1
+  fi
+  ${MKDIR} -p ${_mount_}
+  ${MOUNT} -o loop ${LITP_ISO} ${_mount_} 2>&1
+  if [ $? -ne 0 ] ; then
+    exit 1
+  fi
+  ${ECHO} "Running LITP installer ..."
+  ${SH} ${_mount_}/install/installer.sh 2>&1
+  _rc_=$?
+  ${UMOUNT} ${_mount_} > /dev/null 2>&1
+  ${RM} -rf ${_mount_} > /dev/null 2>&1
+  if [ ${_rc_} -ne 0 ] ; then
+    exit 1
+  fi
+
+  ${IPTABLES} -F FORWARD 2>&1
+  ${SERVICE} iptables save 2>&1
+}
+
+setup_litprc()
+{
+  _litprc_=${HOME}/.litprc
+  ${ECHO} "[litp-client]
+username=litp-admin
+password=CHANGEME"> ${_litprc_}
+  ${CHMOD} 600 ${_litprc_}
+
+  _litpadmin_="litp-admin"
+  _litpadmin_home_=`${GREP} "${_litpadmin_}" /etc/passwd | ${AWK} -F: '{print $6}'`
+  ${CP} ${_litprc_} ${_litpadmin_home_}/
+  ${CHOWN} ${_litpadmin_}:${_litpadmin_}  ${_litpadmin_home_}/.litprc
+
+  ${ECHO} "Set the litp-client passwords ..."
+}
+
+extract_core_ppp
+install_litp
+setup_litprc
+
+${ECHO} "Finished."
+exit 0

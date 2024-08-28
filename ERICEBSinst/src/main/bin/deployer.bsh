@@ -1,0 +1,21 @@
+#!/bin/bash
+
+DIRNAME=/usr/bin/dirname
+ECHO=/bin/echo
+PYTHON=/usr/bin/python
+
+_dir_=`${DIRNAME} $0`
+SCRIPT_HOME=`cd ${_dir_}/../ 2>/dev/null && pwd || ${ECHO} ${_dir_}`
+PYTHON_LIB=${SCRIPT_HOME}/python
+export PYTHONPATH=${PYTHONPATH}:${PYTHON_LIB}
+unset _dir_
+
+if [ -d ${SCRIPT_HOME}/resource/conf ] ; then
+  CONF_DIR=${SCRIPT_HOME}/resource/conf
+else
+  CONF_DIR=${SCRIPT_HOME}/conf
+fi
+export CONF_DIR
+
+${PYTHON} ${PYTHON_LIB}/deployer.py $*
+exit $?

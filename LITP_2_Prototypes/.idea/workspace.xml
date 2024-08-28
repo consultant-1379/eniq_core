@@ -1,0 +1,1066 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="8f73cfae-cd31-4c91-9c16-ace1ec438e89" name="Default" comment="">
+      <change type="DELETED" beforePath="C:\git_storage\eniq_core_LITP2_Dev\LITP_2_Prototypes\etc\repos\MN_APP_SW\ERICepsjse_CXP9030383-1.1.77.rpm" afterPath="" />
+      <change type="DELETED" beforePath="C:\git_storage\eniq_core_LITP2_Dev\LITP_2_Prototypes\etc\repos\MN_APP_SW\test_lsb_app-1.0.1-1.noarch.rpm" afterPath="" />
+      <change type="MOVED" beforePath="C:\git_storage\eniq_core_LITP2_Dev\LITP_2_Prototypes\lib\litp\__init__.py" afterPath="$PROJECT_DIR$/lib/h_litp/__init__.py" />
+      <change type="MOVED" beforePath="C:\git_storage\eniq_core_LITP2_Dev\LITP_2_Prototypes\lib\litp\rest_api.py" afterPath="$PROJECT_DIR$/lib/h_litp/rest_api.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LITP_2_Prototypes.iml" afterPath="$PROJECT_DIR$/LITP_2_Prototypes.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/deployments/2NodeKVM/deploy.sh" afterPath="$PROJECT_DIR$/deployments/2NodeKVM/deploy.sh" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/etc/installer.conf" afterPath="$PROJECT_DIR$/etc/installer.conf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Litp2Plugins/yum_repository/lib/assure/extensions/pkgmgmt_repo_extensions.py" afterPath="$PROJECT_DIR$/../Litp2Plugins/yum_repository/lib/assure/extensions/pkgmgmt_repo_extensions.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Litp2Plugins/yum_repository/lib/assure/plugin/pkgmgmt_repo_plugin.py" afterPath="$PROJECT_DIR$/../Litp2Plugins/yum_repository/lib/assure/plugin/pkgmgmt_repo_plugin.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/plan_watcher.bsh" afterPath="$PROJECT_DIR$/bin/plan_watcher.bsh" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/deployments/2NodeKVM/site.conf" afterPath="$PROJECT_DIR$/deployments/2NodeKVM/site.conf" />
+    </list>
+    <ignored path="LITP_2_Prototypes.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <file path="/Dummy.txt" changelist="8f73cfae-cd31-4c91-9c16-ace1ec438e89" time="1392916932402" ignored="false" />
+    <file path="/deploy.sh" changelist="8f73cfae-cd31-4c91-9c16-ace1ec438e89" time="1392827061198" ignored="false" />
+    <file path="/pkgmgmt_plugin.conf" changelist="8f73cfae-cd31-4c91-9c16-ace1ec438e89" time="1390396938134" ignored="false" />
+    <file path="/pkgmgmt_extensions.py" changelist="8f73cfae-cd31-4c91-9c16-ace1ec438e89" time="1390397591992" ignored="false" />
+    <file path="/pkgmgmt_repo_extensions.conf" changelist="8f73cfae-cd31-4c91-9c16-ace1ec438e89" time="1390397185644" ignored="false" />
+    <file path="/pkgmgmt_repo_plugin.conf" changelist="8f73cfae-cd31-4c91-9c16-ace1ec438e89" time="1390397207608" ignored="false" />
+    <file path="/pkgmgmt_repo_plugin.py" changelist="8f73cfae-cd31-4c91-9c16-ace1ec438e89" time="1390480920481" ignored="false" />
+    <file path="/pkgmgmt_repo_extensions.py" changelist="8f73cfae-cd31-4c91-9c16-ace1ec438e89" time="1390480709811" ignored="false" />
+    <file path="/assure_yum_repos.pp" changelist="8f73cfae-cd31-4c91-9c16-ace1ec438e89" time="1390478886940" ignored="false" />
+    <file path="/site.conf" changelist="8f73cfae-cd31-4c91-9c16-ace1ec438e89" time="1391099142337" ignored="false" />
+    <file path="/litp_plugin_assure_yumrepo.spec" changelist="8f73cfae-cd31-4c91-9c16-ace1ec438e89" time="1390483564964" ignored="false" />
+    <file path="/build.sh" changelist="8f73cfae-cd31-4c91-9c16-ace1ec438e89" time="1391517170061" ignored="false" />
+    <file path="/deploy.bsh" changelist="8f73cfae-cd31-4c91-9c16-ace1ec438e89" time="1390488032174" ignored="false" />
+    <file path="/test_lsb_app" changelist="8f73cfae-cd31-4c91-9c16-ace1ec438e89" time="1390906151044" ignored="false" />
+    <file path="/a.dummy" changelist="8f73cfae-cd31-4c91-9c16-ace1ec438e89" time="1392723209132" ignored="false" />
+    <file path="/cleanup.sh" changelist="8f73cfae-cd31-4c91-9c16-ace1ec438e89" time="1391174490216" ignored="false" />
+    <file path="/rest_api.py" changelist="8f73cfae-cd31-4c91-9c16-ace1ec438e89" time="1391092616244" ignored="false" />
+    <file path="/installer.conf" changelist="8f73cfae-cd31-4c91-9c16-ace1ec438e89" time="1391101813451" ignored="false" />
+    <file path="/MainClass.java" changelist="8f73cfae-cd31-4c91-9c16-ace1ec438e89" time="1391510662907" ignored="false" />
+    <file path="/MainClassClient.java" changelist="8f73cfae-cd31-4c91-9c16-ace1ec438e89" time="1391517817933" ignored="false" />
+    <file path="/MainClassServer.java" changelist="8f73cfae-cd31-4c91-9c16-ace1ec438e89" time="1391517493945" ignored="false" />
+    <file path="/fragment.java" changelist="8f73cfae-cd31-4c91-9c16-ace1ec438e89" time="1392723009064" ignored="false" />
+    <file path="/test_java_app.spec" changelist="8f73cfae-cd31-4c91-9c16-ace1ec438e89" time="1391515816195" ignored="false" />
+    <file path="/definition.bsh" changelist="8f73cfae-cd31-4c91-9c16-ace1ec438e89" time="1391620281505" ignored="false" />
+    <file path="/test_java_app" changelist="8f73cfae-cd31-4c91-9c16-ace1ec438e89" time="1391516009169" ignored="false" />
+    <file path="/inventory.bsh" changelist="8f73cfae-cd31-4c91-9c16-ace1ec438e89" time="1391620372289" ignored="false" />
+    <file path="/site.ini" changelist="8f73cfae-cd31-4c91-9c16-ace1ec438e89" time="1392120058107" ignored="false" />
+    <file path="/definition.sh" changelist="8f73cfae-cd31-4c91-9c16-ace1ec438e89" time="1391683740967" ignored="false" />
+    <file path="/inventory.sh" changelist="8f73cfae-cd31-4c91-9c16-ace1ec438e89" time="1391685937997" ignored="false" />
+    <file path="/bootmgr.sh" changelist="8f73cfae-cd31-4c91-9c16-ace1ec438e89" time="1391599856698" ignored="false" />
+    <file path="/runtime.bsh" changelist="8f73cfae-cd31-4c91-9c16-ace1ec438e89" time="1391618240127" ignored="false" />
+    <file path="/ERICddc_CXP9030294.xml" changelist="8f73cfae-cd31-4c91-9c16-ace1ec438e89" time="1391605749214" ignored="false" />
+    <file path="/litp_helper.py" changelist="8f73cfae-cd31-4c91-9c16-ace1ec438e89" time="1391608597275" ignored="false" />
+    <file path="/campaigns.bsh" changelist="8f73cfae-cd31-4c91-9c16-ace1ec438e89" time="1391682785014" ignored="false" />
+    <file path="/clean_all.sh" changelist="8f73cfae-cd31-4c91-9c16-ace1ec438e89" time="1392050020089" ignored="false" />
+    <file path="/litp_rest_client.py" changelist="8f73cfae-cd31-4c91-9c16-ace1ec438e89" time="1392981057404" ignored="false" />
+    <file path="/eniq_inst.py" changelist="8f73cfae-cd31-4c91-9c16-ace1ec438e89" time="1392723175195" ignored="false" />
+    <file path="/fragment.py" changelist="8f73cfae-cd31-4c91-9c16-ace1ec438e89" time="1392979771508" ignored="false" />
+    <file path="/inventory.txt" changelist="8f73cfae-cd31-4c91-9c16-ace1ec438e89" time="1391783781922" ignored="false" />
+    <file path="/a.py" changelist="8f73cfae-cd31-4c91-9c16-ace1ec438e89" time="1391787739573" ignored="false" />
+    <file path="/cobbler_client.py" changelist="8f73cfae-cd31-4c91-9c16-ace1ec438e89" time="1392127747242" ignored="false" />
+    <file path="/exec_process.py" changelist="8f73cfae-cd31-4c91-9c16-ace1ec438e89" time="1392302963466" ignored="false" />
+    <file path="/landscape_xml_parser.py" changelist="8f73cfae-cd31-4c91-9c16-ace1ec438e89" time="1392723239066" ignored="false" />
+    <file path="/definition.xml" changelist="8f73cfae-cd31-4c91-9c16-ace1ec438e89" time="1392118621156" ignored="false" />
+    <file path="/model_tool.py" changelist="8f73cfae-cd31-4c91-9c16-ace1ec438e89" time="1392641627329" ignored="false" />
+    <file path="/ini.py" changelist="8f73cfae-cd31-4c91-9c16-ace1ec438e89" time="1392134663105" ignored="false" />
+    <file path="/libvirt_definition.xml" changelist="8f73cfae-cd31-4c91-9c16-ace1ec438e89" time="1392385330823" ignored="false" />
+    <file path="/site_libvirt.xml" changelist="8f73cfae-cd31-4c91-9c16-ace1ec438e89" time="1392201890673" ignored="false" />
+    <file path="/site_libvirt.ini" changelist="8f73cfae-cd31-4c91-9c16-ace1ec438e89" time="1392656974409" ignored="false" />
+    <file path="/clean_landscape.sh" changelist="8f73cfae-cd31-4c91-9c16-ace1ec438e89" time="1392204576476" ignored="false" />
+    <file path="/clean_all_libvirt.sh" changelist="8f73cfae-cd31-4c91-9c16-ace1ec438e89" time="1392724352916" ignored="false" />
+    <file path="/dhcp_client.py" changelist="8f73cfae-cd31-4c91-9c16-ace1ec438e89" time="1392723908292" ignored="false" />
+    <file path="/ddc.ini" changelist="8f73cfae-cd31-4c91-9c16-ace1ec438e89" time="1392311158903" ignored="false" />
+    <file path="/ddc.xml" changelist="8f73cfae-cd31-4c91-9c16-ace1ec438e89" time="1392312113740" ignored="false" />
+    <file path="/eps.xml" changelist="8f73cfae-cd31-4c91-9c16-ace1ec438e89" time="1392311648738" ignored="false" />
+    <file path="$PROJECT_DIR$/../EPS_LITP1.1/backups/old/inventory.txt" changelist="8f73cfae-cd31-4c91-9c16-ace1ec438e89" time="1392374023683" ignored="false" />
+    <file path="$PROJECT_DIR$/../EPS_LITP1.1/backups/old.1/inventory.txt" changelist="8f73cfae-cd31-4c91-9c16-ace1ec438e89" time="1392374023682" ignored="false" />
+    <file path="$PROJECT_DIR$/../EPS_LITP1.1/backups/old.1/campaigns.txt" changelist="8f73cfae-cd31-4c91-9c16-ace1ec438e89" time="1392374023682" ignored="false" />
+    <file path="/rpm_helper.py" changelist="8f73cfae-cd31-4c91-9c16-ace1ec438e89" time="1392723411043" ignored="false" />
+    <file path="$PROJECT_DIR$/../../OSS/com.ericsson.oss.itpf.common/XStreamTools/xstream-generator/src/main/resources/logback.xml" changelist="8f73cfae-cd31-4c91-9c16-ace1ec438e89" time="1392650148346" ignored="false" />
+    <file path="$PROJECT_DIR$/../../OSS/com.ericsson.oss.itpf.common/XStreamTools/xstream-generator/src/main/resources/config_Correlations.xml" changelist="8f73cfae-cd31-4c91-9c16-ace1ec438e89" time="1392650148346" ignored="false" />
+    <file path="$PROJECT_DIR$/../../OSS/com.ericsson.oss.itpf.common/XStreamTools/xstream-generator/pom.xml" changelist="8f73cfae-cd31-4c91-9c16-ace1ec438e89" time="1392650148346" ignored="false" />
+    <file path="$PROJECT_DIR$/../../OSS/com.ericsson.oss.itpf.common/XStreamTools/pom.xml" changelist="8f73cfae-cd31-4c91-9c16-ace1ec438e89" time="1392650148346" ignored="false" />
+    <file path="$PROJECT_DIR$/../../OSS/com.ericsson.oss.itpf.common/XStreamTools/xstream-generator/src/main/assembly/bin-component.xml" changelist="8f73cfae-cd31-4c91-9c16-ace1ec438e89" time="1392650148346" ignored="false" />
+    <file path="$PROJECT_DIR$/../../OSS/com.ericsson.oss.itpf.common/XStreamTools/xstream-generator/src/main/assembly/bin-unix.xml" changelist="8f73cfae-cd31-4c91-9c16-ace1ec438e89" time="1392650148346" ignored="false" />
+    <file path="$PROJECT_DIR$/../../OSS/com.ericsson.oss.itpf.common/XStreamTools/xstream-generator/src/main/assembly/bin.xml" changelist="8f73cfae-cd31-4c91-9c16-ace1ec438e89" time="1392650148346" ignored="false" />
+    <file path="$PROJECT_DIR$/../../OSS/com.ericsson.oss.itpf.common/XStreamTools/xstream-generator/src/main/resources/hazelcast.xml" changelist="8f73cfae-cd31-4c91-9c16-ace1ec438e89" time="1392650148346" ignored="false" />
+    <file path="$PROJECT_DIR$/../../OSS/com.ericsson.oss.itpf.common/EPCommon/wwecds-correlation-pe/pom.xml" changelist="8f73cfae-cd31-4c91-9c16-ace1ec438e89" time="1392651069004" ignored="false" />
+    <file path="/pom.xml" changelist="8f73cfae-cd31-4c91-9c16-ace1ec438e89" time="1392651022565" ignored="false" />
+    <file path="$USER_HOME$/.m2/settings.xml" changelist="8f73cfae-cd31-4c91-9c16-ace1ec438e89" time="1392651618781" ignored="false" />
+    <file path="$PROJECT_DIR$/../../OSS/com.ericsson.oss.itpf.common/EPCommon/wwecds-metadata/target/generated/xml/CorrelatedEvents_PA1.xml" changelist="8f73cfae-cd31-4c91-9c16-ace1ec438e89" time="1392651885789" ignored="false" />
+    <file path="$PROJECT_DIR$/../../OSS/com.ericsson.oss.itpf.common/EPCommon/wwecds-metadata/target/generated/xml/SchemaTypes.xml" changelist="8f73cfae-cd31-4c91-9c16-ace1ec438e89" time="1392651885789" ignored="false" />
+    <file path="/deployment_builder.py" changelist="8f73cfae-cd31-4c91-9c16-ace1ec438e89" time="1392826821777" ignored="false" />
+    <file path="$PROJECT_DIR$/../EPS_DeploymentBuilder/conf/deployment.conf" changelist="8f73cfae-cd31-4c91-9c16-ace1ec438e89" time="1392652365737" ignored="false" />
+    <file path="/deployment.conf" changelist="8f73cfae-cd31-4c91-9c16-ace1ec438e89" time="1392652365359" ignored="false" />
+    <file path="$PROJECT_DIR$/../EPS_DeploymentBuilder/conf/firewall.conf" changelist="8f73cfae-cd31-4c91-9c16-ace1ec438e89" time="1392652989717" ignored="false" />
+    <file path="/firewall.conf" changelist="8f73cfae-cd31-4c91-9c16-ace1ec438e89" time="1392652974205" ignored="false" />
+    <file path="/firewall_ms.xml" changelist="8f73cfae-cd31-4c91-9c16-ace1ec438e89" time="1392653129479" ignored="false" />
+    <file path="/firewall_sc.xml" changelist="8f73cfae-cd31-4c91-9c16-ace1ec438e89" time="1392653169954" ignored="false" />
+    <file path="/os_sc.xml" changelist="8f73cfae-cd31-4c91-9c16-ace1ec438e89" time="1392653311744" ignored="false" />
+    <file path="$PROJECT_DIR$/../EPS_DeploymentBuilder/lib/eniq_inst.py" changelist="8f73cfae-cd31-4c91-9c16-ace1ec438e89" time="1392653432900" ignored="false" />
+    <file path="$PROJECT_DIR$/../EPS_DeploymentBuilder/lib/h_dhcp/dhcp_client.py" changelist="8f73cfae-cd31-4c91-9c16-ace1ec438e89" time="1392653432900" ignored="false" />
+    <file path="$PROJECT_DIR$/../EPS_DeploymentBuilder/lib/h_litp/litp_rest_client.py" changelist="8f73cfae-cd31-4c91-9c16-ace1ec438e89" time="1392654273130" ignored="false" />
+    <file path="/installer.bsh" changelist="8f73cfae-cd31-4c91-9c16-ace1ec438e89" time="1392721881294" ignored="false" />
+    <file path="/SSHSocket.py" changelist="8f73cfae-cd31-4c91-9c16-ace1ec438e89" time="1392723385170" ignored="false" />
+    <file path="/config.ini" changelist="8f73cfae-cd31-4c91-9c16-ace1ec438e89" time="1392826444363" ignored="false" />
+    <file path="/storage-profiles.ini" changelist="8f73cfae-cd31-4c91-9c16-ace1ec438e89" time="1392806606144" ignored="false" />
+    <file path="/plan_watcher.bsh" changelist="8f73cfae-cd31-4c91-9c16-ace1ec438e89" time="1392827587803" ignored="false" />
+    <file path="$PROJECT_DIR$/../../litp/assure_plugins/repository/plugin/ERIClitprepository/src/repository_plugin/repository_plugin.py" changelist="8f73cfae-cd31-4c91-9c16-ace1ec438e89" time="1392913963689" ignored="false" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="DaemonCodeAnalyzer">
+    <disable_hints />
+  </component>
+  <component name="DatabaseView">
+    <flatten value="false" />
+    <groupTables value="false" />
+    <sortChildren value="false" />
+  </component>
+  <component name="DebuggerManager">
+    <breakpoint_any default_suspend_policy="SuspendAll" default_condition_enabled="true">
+      <breakpoint>
+        <option name="NOTIFY_CAUGHT" value="true" />
+        <option name="NOTIFY_UNCAUGHT" value="true" />
+        <option name="ENABLED" value="false" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="REMOVE_AFTER_HIT" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="&#13;&#13;JAVA" />
+        <option name="LOG_MESSAGE" value="&#13;&#13;JAVA" />
+      </breakpoint>
+      <breakpoint>
+        <option name="NOTIFY_CAUGHT" value="true" />
+        <option name="NOTIFY_UNCAUGHT" value="true" />
+        <option name="ENABLED" value="false" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="REMOVE_AFTER_HIT" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="&#13;&#13;JAVA" />
+        <option name="LOG_MESSAGE" value="&#13;&#13;JAVA" />
+      </breakpoint>
+    </breakpoint_any>
+    <line_breakpoints default_suspend_policy="SuspendAll" default_condition_enabled="true" />
+    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
+    <breakpoint_rules />
+    <ui_properties />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="LITP_2_Prototypes" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="deployment_builder.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../EPS_LITP2.x/lib/deployment_builder.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="252" column="50" selection-start="13275" selection-end="13275" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="e#0#10#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="litp_rest_client.py" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/../EPS_LITP2.x/lib/h_litp/litp_rest_client.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="163" column="76" selection-start="6297" selection-end="6297" vertical-scroll-proportion="0.3294893">
+              <folding>
+                <element signature="e#0#31#0" expanded="true" />
+                <element signature="e#250#1588#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindManager">
+    <FindUsagesManager>
+      <setting name="OPEN_NEW_TAB" value="false" />
+    </FindUsagesManager>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="GitLogSettings">
+    <option name="myDateState">
+      <MyDateState />
+    </option>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="changedFiles">
+      <list>
+        <option value="$PROJECT_DIR$/../EPS_LITP1.1/lib/h_rpm/rpm_helper.py" />
+        <option value="$PROJECT_DIR$/../EPS_LITP1.1/lib/h_dhcp/dhcp_client.py" />
+        <option value="$PROJECT_DIR$/../EPS_LITP1.1/bin/clean_all_libvirt.sh" />
+        <option value="$PROJECT_DIR$/../EPS_LITP2.x/site/libvirt-provider.ini" />
+        <option value="$PROJECT_DIR$/../EPS_LITP2.x/site/storage-profiles.ini" />
+        <option value="$PROJECT_DIR$/../EPS_LITP2.x/site/config.ini" />
+        <option value="$PROJECT_DIR$/deployments/2NodeKVM/deploy.sh" />
+        <option value="$PROJECT_DIR$/bin/plan_watcher.bsh" />
+        <option value="$PROJECT_DIR$/lib/h_litp/rest_api.py" />
+        <option value="$PROJECT_DIR$/../EPS_LITP2.x/lib/h_util/ini.py" />
+        <option value="$PROJECT_DIR$/../EPS_LITP2.x/lib/h_util/SSHSocket.py" />
+        <option value="$PROJECT_DIR$/../EPS_LITP2.x/lib/h_rpm/rpm_helper.py" />
+        <option value="$PROJECT_DIR$/../EPS_LITP2.x/lib/h_dhcp/dhcp_client.py" />
+        <option value="$PROJECT_DIR$/../EPS_LITP2.x/lib/h_cobbler/cobbler_client.py" />
+        <option value="$PROJECT_DIR$/../EPS_LITP2.x/lib/deployment_builder.py" />
+        <option value="$PROJECT_DIR$/../EPS_LITP2.x/lib/h_litp/litp_rest_client.py" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState />
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="width" value="1600" />
+    <option name="height" value="1170" />
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State>
+            <id />
+          </State>
+          <State>
+            <id>Bash</id>
+          </State>
+          <State>
+            <id>CSS</id>
+          </State>
+          <State>
+            <id>Code style issuesJavaScript</id>
+          </State>
+          <State>
+            <id>Declaration redundancy</id>
+          </State>
+          <State>
+            <id>Django</id>
+          </State>
+          <State>
+            <id>Error handling</id>
+          </State>
+          <State>
+            <id>JavaScript</id>
+          </State>
+          <State>
+            <id>Portability issues</id>
+          </State>
+          <State>
+            <id>Properties Files</id>
+          </State>
+          <State>
+            <id>Python</id>
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>CssInvalidShorthandPropertyValue</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
+  </component>
+  <component name="ProjectReloadState">
+    <option name="STATE" value="0" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1" splitterProportion="0.5">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="LITP_2_Prototypes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="LITP_2_Prototypes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="EPS_LITP2.x" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="LITP_2_Prototypes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="EPS_LITP2.x" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="LITP_2_Prototypes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="EPS_LITP2.x" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="h_litp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="LITP_2_Prototypes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="EPS_LITP2.x" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="h_cobbler" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="GoToFile.includeJavaFiles" value="false" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="OverrideImplement.combined" value="true" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="options.splitter.main.proportions" value="0.3" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
+    <property name="recentsLimit" value="5" />
+    <property name="MemberChooser.sorted" value="false" />
+    <property name="options.lastSelected" value="preferences.pluginManager" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../EPS_LITP2.x" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="MemberChooser.copyJavadoc" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.highlight.mappings" value="true" />
+    <property name="GoToClass.toSaveIncludeLibraries" value="false" />
+    <property name="WebServerToolWindowFactoryState" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.date" value="false" />
+    <property name="restartRequiresConfirmation" value="true" />
+    <property name="MemberChooser.showClasses" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.highlight.symlinks" value="true" />
+    <property name="GoToClass.includeLibraries" value="false" />
+    <property name="dynamic.classpath" value="false" />
+    <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+  </component>
+  <component name="PublishConfig" serverName="EPS (2209)" serverId="2581de7b-ab94-4a2d-98c5-f812f4fc9e2c" autoUpload="true">
+    <servers>
+      <server id="2581de7b-ab94-4a2d-98c5-f812f4fc9e2c">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/root/EPS_LITP1.1" local="$PROJECT_DIR$/../EPS_LITP1.1" />
+          </mappings>
+        </serverdata>
+      </server>
+      <server id="75a989d6-207a-4001-b296-d72792abab5d">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/root/EPS_LITP1.1" local="$PROJECT_DIR$/../EPS_LITP1.1" />
+          </mappings>
+        </serverdata>
+      </server>
+      <server id="94d394cf-7cbf-4557-93bf-09c5d6577125">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/opt/ericsson/nms/litp" local="$PROJECT_DIR$/../Litp2Plugins/yum_repository" />
+          </mappings>
+        </serverdata>
+      </server>
+      <server id="e187c351-1661-4046-a2da-8cd4f52d1dd6">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/root/eeipca/LITP_2_Prototypes" local="$PROJECT_DIR$" />
+          </mappings>
+        </serverdata>
+      </server>
+    </servers>
+  </component>
+  <component name="PyConsoleOptionsProvider">
+    <option name="myPythonConsoleState">
+      <PyConsoleSettings />
+    </option>
+    <option name="myDjangoConsoleState">
+      <PyConsoleSettings />
+    </option>
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\git_storage\eniq_core_LITP2_Dev\EPS_LITP1.1\xml\solutions" />
+      <recent name="C:\git_storage\eniq_core_LITP2_Dev\EPS_LITP1.1\solutions" />
+      <recent name="C:\git_storage\eniq_core_LITP2_Dev\EPS_LITP1.1\backups" />
+      <recent name="C:\git_storage\eniq_core_LITP2_Dev\EPS_LITP1.1\backups\old" />
+      <recent name="C:\git_storage\eniq_core_LITP2_Dev\EPS_LITP1.1\sw\static" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\git_storage\eniq_core_LITP2_Dev\EPS_LITP1.1\lib\h_util" />
+      <recent name="C:\git_storage\eniq_core_LITP2_Dev\EPS_LITP1.1\bin" />
+      <recent name="C:\git_storage\eniq_core_LITP2_Dev\EPS_LITP1.1\site" />
+      <recent name="C:\git_storage\eniq_core_LITP2_Dev\EPS_LITP1.1\xml" />
+      <recent name="C:\git_storage\eniq_core_LITP2_Dev\EPS_LITP1.1\definitions" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.litp_rest_client">
+    <configuration default="false" name="litp_rest_client" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="C:/tools/Python26/python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../EPS_LITP2.x/lib/h_litp" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="EPS_LITP2.x" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../EPS_LITP2.x/lib/h_litp/litp_rest_client.py" />
+      <option name="PARAMETERS" value="" />
+      <RunnerSettings RunnerId="PyDebugRunner" />
+      <RunnerSettings RunnerId="PythonRunner" />
+      <ConfigurationWrapper RunnerId="PyDebugRunner" />
+      <ConfigurationWrapper RunnerId="PythonRunner" />
+      <method />
+    </configuration>
+    <configuration default="false" name="deployment_builder" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="C:/tools/Python26/python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../EPS_LITP2.x/lib" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="EPS_LITP2.x" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../EPS_LITP2.x/lib/deployment_builder.py" />
+      <option name="PARAMETERS" value="" />
+      <RunnerSettings RunnerId="PyDebugRunner" />
+      <RunnerSettings RunnerId="PythonRunner" />
+      <ConfigurationWrapper RunnerId="PyDebugRunner" />
+      <ConfigurationWrapper RunnerId="PythonRunner" />
+      <method />
+    </configuration>
+    <configuration default="true" type="BashConfigurationType" factoryName="Bash">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="INTERPRETER_PATH" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <module name="EPS_LITP1.1" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <method />
+    </configuration>
+    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="C:/tools/Python26/python.exe" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="EPS_LITP2.x" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <RunnerSettings RunnerId="JProfiler">
+        <option name="WINDOW" value="false" />
+        <option name="JVMPI" value="false" />
+        <option name="INTERPRETED" value="false" />
+      </RunnerSettings>
+      <method>
+        <option name="Make" enabled="false" />
+      </method>
+    </configuration>
+    <configuration default="true" type="Remote" factoryName="Remote">
+      <option name="USE_SOCKET_TRANSPORT" value="true" />
+      <option name="SERVER_MODE" value="false" />
+      <option name="SHMEM_ADDRESS" value="javadebug" />
+      <option name="HOST" value="localhost" />
+      <option name="PORT" value="5005" />
+      <method />
+    </configuration>
+    <configuration default="true" type="PyRemoteDebugConfigurationType" factoryName="Python Remote Debug">
+      <module name="" />
+      <option name="PORT" value="0" />
+      <option name="HOST" value="localhost" />
+      <PathMappingSettings>
+        <option name="pathMappings">
+          <list />
+        </option>
+      </PathMappingSettings>
+      <option name="REDIRECT_OUTPUT" value="true" />
+      <option name="SUSPEND_AFTER_CONNECT" value="true" />
+      <RunnerSettings RunnerId="JProfiler">
+        <option name="WINDOW" value="false" />
+        <option name="JVMPI" value="false" />
+        <option name="INTERPRETED" value="false" />
+      </RunnerSettings>
+      <method>
+        <option name="Make" enabled="false" />
+      </method>
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Unittests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="EPS_LITP2.x" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="PUREUNITTEST" value="true" />
+      <option name="PARAMS" value="" />
+      <option name="USE_PARAM" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method />
+    </configuration>
+    <configuration default="true" type="TestNG" factoryName="TestNG">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+      <method />
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Doctests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="EPS_LITP2.x" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="eniq_inst" type="PythonConfigurationType" factoryName="Python">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="C:/tools/Python26/python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../EPS_LITP1.1/lib" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="EPS_LITP1.1" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../EPS_LITP1.1/lib/eniq_inst.py" />
+      <option name="PARAMETERS" value="--site C:\git_storage\eniq_core_LITP2_Dev\EPS_LITP1.1\site\site_libvirt.ini" />
+      <RunnerSettings RunnerId="JProfiler">
+        <option name="WINDOW" value="false" />
+        <option name="JVMPI" value="false" />
+        <option name="INTERPRETED" value="false" />
+      </RunnerSettings>
+      <RunnerSettings RunnerId="PyDebugRunner" />
+      <RunnerSettings RunnerId="PythonRunner" />
+      <ConfigurationWrapper RunnerId="JProfiler" />
+      <ConfigurationWrapper RunnerId="PyDebugRunner" />
+      <ConfigurationWrapper RunnerId="PythonRunner" />
+      <method />
+    </configuration>
+    <configuration default="false" name="Debug atrcxb2209" type="PyRemoteDebugConfigurationType" factoryName="Python Remote Debug">
+      <module name="" />
+      <option name="PORT" value="55123" />
+      <option name="HOST" value="localhost" />
+      <PathMappingSettings>
+        <option name="pathMappings">
+          <list>
+            <mapping local-root="$PROJECT_DIR$/.." remote-root="/root" />
+          </list>
+        </option>
+      </PathMappingSettings>
+      <option name="REDIRECT_OUTPUT" value="true" />
+      <option name="SUSPEND_AFTER_CONNECT" value="true" />
+      <RunnerSettings RunnerId="PyRemoteDebugRunner" />
+      <ConfigurationWrapper RunnerId="PyRemoteDebugRunner" />
+      <method />
+    </configuration>
+    <list size="4">
+      <item index="0" class="java.lang.String" itemvalue="Python.eniq_inst" />
+      <item index="1" class="java.lang.String" itemvalue="Python Remote Debug.Debug atrcxb2209" />
+      <item index="2" class="java.lang.String" itemvalue="Python.litp_rest_client" />
+      <item index="3" class="java.lang.String" itemvalue="Python.deployment_builder" />
+    </list>
+    <recent_temporary>
+      <list size="2">
+        <item index="0" class="java.lang.String" itemvalue="Python.litp_rest_client" />
+        <item index="1" class="java.lang.String" itemvalue="Python.deployment_builder" />
+      </list>
+    </recent_temporary>
+    <configuration name="&lt;template&gt;" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" default="true" selected="false">
+      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m" />
+    </configuration>
+    <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
+      <Host>localhost</Host>
+      <Port>5050</Port>
+    </configuration>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="TodoView" selected-index="0">
+    <todo-panel id="selected-file">
+      <are-packages-shown value="false" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="default-changelist">
+      <are-packages-shown value="false" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="false" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="0" width="1600" height="1170" extended-state="0" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32944068" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.21291736" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39923224" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32917467" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32917467" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32917467" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32944068" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17945383" sideWeight="0.6074856" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3925144" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="File Transfer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18338871" sideWeight="0.48365384" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32821497" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="JProfiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32854405" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="OFFER_MOVE_TO_ANOTHER_CHANGELIST_ON_PARTIAL_COMMIT" value="true" />
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="CHECK_NEW_TODO" value="false" />
+    <option name="myTodoPanelSettings">
+      <value>
+        <are-packages-shown value="false" />
+        <are-modules-shown value="false" />
+        <flatten-packages value="false" />
+        <is-autoscroll-to-source value="false" />
+      </value>
+    </option>
+    <option name="PERFORM_UPDATE_IN_BACKGROUND" value="true" />
+    <option name="PERFORM_COMMIT_IN_BACKGROUND" value="true" />
+    <option name="PERFORM_EDIT_IN_BACKGROUND" value="true" />
+    <option name="PERFORM_CHECKOUT_IN_BACKGROUND" value="true" />
+    <option name="PERFORM_ADD_REMOVE_IN_BACKGROUND" value="true" />
+    <option name="PERFORM_ROLLBACK_IN_BACKGROUND" value="false" />
+    <option name="CHECK_LOCALLY_CHANGED_CONFLICTS_IN_BACKGROUND" value="false" />
+    <option name="CHANGED_ON_SERVER_INTERVAL" value="60" />
+    <option name="SHOW_ONLY_CHANGED_IN_SELECTION_DIFF" value="true" />
+    <option name="CHECK_COMMIT_MESSAGE_SPELLING" value="true" />
+    <option name="DEFAULT_PATCH_EXTENSION" value="patch" />
+    <option name="SHORT_DIFF_HORIZONTALLY" value="true" />
+    <option name="SHORT_DIFF_EXTRA_LINES" value="2" />
+    <option name="SOFT_WRAPS_IN_SHORT_DIFF" value="true" />
+    <option name="INCLUDE_TEXT_INTO_PATCH" value="false" />
+    <option name="INCLUDE_TEXT_INTO_SHELF" value="false" />
+    <option name="SHOW_FILE_HISTORY_DETAILS" value="true" />
+    <option name="SHOW_VCS_ERROR_NOTIFICATIONS" value="true" />
+    <option name="SHOW_DIRTY_RECURSIVELY" value="false" />
+    <option name="LIMIT_HISTORY" value="true" />
+    <option name="MAXIMUM_HISTORY_ROWS" value="1000" />
+    <option name="UPDATE_FILTER_SCOPE_NAME" />
+    <option name="USE_COMMIT_MESSAGE_MARGIN" value="false" />
+    <option name="COMMIT_MESSAGE_MARGIN_SIZE" value="72" />
+    <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
+    <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
+    <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactoring&#10;" />
+    <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
+    <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
+    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="REFORMAT_BEFORE_FILE_COMMIT" value="false" />
+    <option name="FILE_HISTORY_DIALOG_COMMENTS_SPLITTER_PROPORTION" value="0.8" />
+    <option name="FILE_HISTORY_DIALOG_SPLITTER_PROPORTION" value="0.5" />
+    <option name="ACTIVE_VCS_NAME" />
+    <option name="UPDATE_GROUP_BY_PACKAGES" value="false" />
+    <option name="UPDATE_GROUP_BY_CHANGELIST" value="false" />
+    <option name="UPDATE_FILTER_BY_SCOPE" value="false" />
+    <option name="SHOW_FILE_HISTORY_AS_TREE" value="false" />
+    <option name="FILE_HISTORY_SPLITTER_PROPORTION" value="0.6" />
+    <MESSAGE value="Added option to install LITP 2 plugins" />
+    <MESSAGE value="Added repository model items (+ changed a few things around)" />
+    <MESSAGE value="Added yum repo info" />
+    <MESSAGE value="Version 1 of simple yum repo mgmt plugin" />
+    <MESSAGE value="moved stuff around" />
+    <MESSAGE value="LSB stuff" />
+    <MESSAGE value="." />
+    <MESSAGE value="Remove repo" />
+    <MESSAGE value="no need for root password" />
+    <MESSAGE value="Include jdk package to use" />
+    <MESSAGE value="Create the repo's first, then install packages." />
+    <MESSAGE value="default to localhost as rest server" />
+    <MESSAGE value="refactoring&#10;" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints-dialog>
+        <breakpoints-dialog />
+      </breakpoints-dialog>
+      <option name="time" value="308" />
+    </breakpoint-manager>
+  </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://C:/tools/Python26/Lib/ssl.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="140" column="0" selection-start="4992" selection-end="4992" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../EPS_LITP1.1/lib/h_litp/litp_rest_client.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="130" column="12" selection-start="4876" selection-end="4876" vertical-scroll-proportion="0.43767312" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../EPS_LITP1.1/lib/eniq_inst.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="349" column="31" selection-start="15621" selection-end="15958" vertical-scroll-proportion="0.8201058" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../EPS_LITP2.x/site/config.ini">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="2" selection-start="204" selection-end="204" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/h_litp/rest_api.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="191" column="21" selection-start="7029" selection-end="7029" vertical-scroll-proportion="0.8218504" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bin/plan_watcher.bsh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="30" selection-start="260" selection-end="260" vertical-scroll-proportion="0.2007874" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/deployments/2NodeKVM/deploy.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="39" column="31" selection-start="723" selection-end="723" vertical-scroll-proportion="0.016949153" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../EPS_LITP2.x/lib/h_util/SSHSocket.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="56" column="12" selection-start="1541" selection-end="1541" vertical-scroll-proportion="0.33267716" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../EPS_LITP2.x/lib/h_util/ini.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="13" selection-start="859" selection-end="859" vertical-scroll-proportion="0.38484251">
+          <folding>
+            <element signature="e#0#72#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../EPS_LITP2.x/lib/h_util/h_utils.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../EPS_LITP2.x/lib/h_rpm/rpm_helper.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.070866145" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../EPS_LITP2.x/lib/h_dhcp/dhcp_client.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="49" selection-start="171" selection-end="171" vertical-scroll-proportion="0.11712598" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../EPS_LITP2.x/lib/h_cobbler/cobbler_client.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://C:/tools/Python26/Lib/httplib.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="353" column="0" selection-start="11525" selection-end="11525" vertical-scroll-proportion="0.3294893">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../EPS_LITP2.x/lib/deployment_builder.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="252" column="50" selection-start="13275" selection-end="13275" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../EPS_LITP2.x/lib/h_litp/litp_rest_client.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="163" column="76" selection-start="6297" selection-end="6297" vertical-scroll-proportion="0.3294893">
+          <folding>
+            <element signature="e#0#31#0" expanded="true" />
+            <element signature="e#250#1588#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>BashSupport</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>derby</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.5</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>LITP_2_Prototypes</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>
+

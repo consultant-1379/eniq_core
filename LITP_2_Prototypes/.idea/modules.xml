@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/../EPS_LITP1.1/EPS_LITP1.1.iml" filepath="$PROJECT_DIR$/../EPS_LITP1.1/EPS_LITP1.1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../EPS_LITP2.x/EPS_LITP2.x.iml" filepath="$PROJECT_DIR$/../EPS_LITP2.x/EPS_LITP2.x.iml" />
+      <module fileurl="file://$PROJECT_DIR$/LITP_2_Prototypes.iml" filepath="$PROJECT_DIR$/LITP_2_Prototypes.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../Litp2Plugins/yum_repository/yum_repository.iml" filepath="$PROJECT_DIR$/../Litp2Plugins/yum_repository/yum_repository.iml" />
+    </modules>
+  </component>
+</project>
+
